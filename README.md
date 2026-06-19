@@ -18,7 +18,7 @@
 
 **Aetherix** is an intelligent, conversational AI marketplace that lets you **order food**, **book rides**, **hire workers**, **check weather**, **search the web**, and **look up Wikipedia** — all through a single, beautiful chat interface powered by Mistral AI.
 
-[🚀 **Live Demo**](https://aetherix-v2.onrender.com) · [📖 **Documentation**](#-architecture) · [🐛 **Report Bug**](https://github.com/yousufkidiya17/aetheric-v2/issues) · [✨ **Request Feature**](https://github.com/yousufkidiya17/aetheric-v2/issues)
+[🚀 **Live Demo**](https://aetherix-v2.onrender.com) · [📖 **Documentation**](#-architecture) · [🐛 **Report Bug**](https://github.com/yousufkidiya17/aetherix-ai/issues) · [✨ **Request Feature**](https://github.com/yousufkidiya17/aetherix-ai/issues)
 
 </div>
 
@@ -119,8 +119,8 @@ Aetherix isn't just another chatbot — it's a **full-stack AI-powered service p
 
 ```bash
 # Clone the repository
-git clone https://github.com/yousufkidiya17/aetheric-v2.git
-cd aetheric-v2
+git clone https://github.com/yousufkidiya17/aetherix-ai.git
+cd aetherix-ai
 
 # Install dependencies
 npm install
@@ -150,7 +150,7 @@ The app will be running at `http://localhost:5000` 🎉
 ## 📁 Project Structure
 
 ```
-aetheric-v2/
+aetherix-ai/
 ├── client/                    # Frontend (React + Vite)
 │   ├── index.html             # Entry HTML with meta tags
 │   ├── src/
