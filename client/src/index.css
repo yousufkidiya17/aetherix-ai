@@ -175,3 +175,17 @@
     }
   }
 }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(0, 102, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(0, 102, 255, 0.5)) 
+            drop-shadow(0 0 60px rgba(0, 102, 255, 0.2));
+  }
+}
+
+.animate-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
