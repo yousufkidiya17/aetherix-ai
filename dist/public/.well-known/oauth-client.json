@@ -1,0 +1,10 @@
+{
+  "client_id": "https://aetherixai.qzz.io/.well-known/oauth-client.json",
+  "client_name": "Aetherix AI",
+  "redirect_uris": [
+    "https://aetherixai.qzz.io/api/mcp/auth/callback"
+  ],
+  "token_endpoint_auth_method": "none",
+  "grant_types": ["authorization_code"],
+  "response_types": ["code"]
+}
