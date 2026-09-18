@@ -325,7 +325,7 @@ async function callMCP(intent, tool, params, _userId) {
   }
 }
 var AI_MODELS = [
-  { id: "opencode/big-pickle", name: "Aetherix AI", provider: "opencode", vision: false, description: "Aetherix's default AI model" }
+  { id: "opencode/big-pickle", name: "Aetherix AI", provider: "mistral", vision: false, description: "Aetherix's default AI model" }
 ];
 function uuid() {
   return crypto.randomUUID().slice(0, 8).toUpperCase();
