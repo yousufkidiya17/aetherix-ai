@@ -9,7 +9,7 @@ var __dirname = path.dirname(__filename);
 var CONFIG = {
   MISTRAL_API_KEY: process.env.MISTRAL_API_KEY || "flzFgPJCZ39V6SExEfwY72U7fAbOBH0V",
   MISTRAL_API_URL: "https://api.mistral.ai/v1/chat/completions",
-  MISTRAL_MODEL: "mistral-large-latest",
+  MISTRAL_MODEL: "open-mistral-nemo",
   OPENCODE_PROXY_URL: "http://18.206.216.238:4000/v1/chat/completions"
 };
 var MCPManager = class {
