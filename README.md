@@ -4,6 +4,8 @@ A chat app to order food, book rides, and hire workers. It also checks weather, 
 
 Live app: [https://aetherixai.qzz.io](https://aetherixai.qzz.io) (currently down, M12 off)
 
+Real demo (live app on Render, works even when M12 is off): [https://aetherix-v2.onrender.com](https://aetherix-v2.onrender.com)
+
 Demo preview (static, works without backend): [https://yousufkidiya17.github.io/aetherix-ai/demo.html](https://yousufkidiya17.github.io/aetherix-ai/demo.html)
 
 ## What it does
