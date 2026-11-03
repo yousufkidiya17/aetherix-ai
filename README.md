@@ -6,19 +6,21 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
-[![Render](https://img.shields.io/badge/Deployed_on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+[![Cloudflare Tunnel (M12)](https://img.shields.io/badge/Deployed_on-Cloudflare Tunnel (M12)-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
 
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:1a1a2e,100:0d0d0d&height=120&section=header" width="100%"/>
 
-**Aetherix** is an intelligent, conversational AI marketplace that lets you **order food**, **book rides**, **hire workers**, **check weather**, **search the web**, and **look up Wikipedia** — all through a single, beautiful chat interface powered by Mistral AI.
+**Aetherix** is an intelligent, conversational AI marketplace that lets you **order food**, **book rides**, **hire workers**, **check weather**, **search the web**, and **look up Wikipedia** — all through a single, beautiful chat interface powered by OpenCode / LongCat AI.
 
-[🚀 **Live Demo**](https://aetherix-v2.onrender.com) · [📖 **Documentation**](#-architecture) · [🐛 **Report Bug**](https://github.com/yousufkidiya17/aetherix-ai/issues) · [✨ **Request Feature**](https://github.com/yousufkidiya17/aetherix-ai/issues)
+[🚀 **Live Demo**](https://aetherixai.qzz.io)
+
+> **Production status (Oct 2026):** Live at aetherixai.qzz.io (M12 production, local port 3001). This README now describes the Oct production setup; the repo code snapshot is from Sep 2026. · [📖 **Documentation**](#-architecture) · [🐛 **Report Bug**](https://github.com/yousufkidiya17/aetherix-ai/issues) · [✨ **Request Feature**](https://github.com/yousufkidiya17/aetherix-ai/issues)
 
 </div>
 
@@ -28,13 +30,13 @@
 
 > _"One chat to rule them all."_
 
-Aetherix isn't just another chatbot — it's a **full-stack AI-powered service platform** that understands Hinglish, detects user intent in real-time, and routes requests to specialized **MCP (Model Context Protocol) service handlers**. Think of it as having your own personal AI assistant that can do _everything_.
+Aetherix isn't just another chatbot — it's a **full-stack AI-powered service platform** that understands English and Hindi, detects user intent in real-time, and routes requests to specialized **MCP (Model Context Protocol) service handlers**. Think of it as having your own personal AI assistant that can do _everything_.
 
 <div align="center">
 
-| 🍕 Food Ordering | 🚕 Ride Booking | 👷 Worker Hiring |
+| 👷 Worker Hiring | 🚕 Ride Booking | 🍕 Food Ordering |
 |:---:|:---:|:---:|
-| Search restaurants, browse menus, place orders | Estimate fares, compare ride types, book instantly | Find electricians, plumbers, carpenters & more |
+| Find electricians, plumbers, carpenters & more | Estimate fares, compare ride types, book instantly | Search restaurants, browse menus, place orders |
 
 | 🌤️ Live Weather | 🔍 Web Search | 📚 Wikipedia |
 |:---:|:---:|:---:|
@@ -47,8 +49,8 @@ Aetherix isn't just another chatbot — it's a **full-stack AI-powered service p
 ## ✨ Features
 
 ### 🤖 AI-Powered Conversational Interface
-- **Mistral AI** backend with structured JSON responses
-- **Hinglish-first** — the AI mirrors your conversational style
+- **OpenCode / LongCat AI** backend with structured JSON responses
+- **English default** — Devanagari input is answered in Hindi, everything else in English
 - Real-time **intent detection** across 8 categories
 - Dynamic **date & time awareness** (IST)
 - Smart **fallback responses** when AI is unavailable
@@ -69,7 +71,7 @@ Aetherix isn't just another chatbot — it's a **full-stack AI-powered service p
 
 ### 👷 Worker Onboarding
 - Premium registration form with validation
-- 7 service categories
+- 27 workers — 5 blue-collar + 22 white-collar professionals
 - Hourly rate configuration
 - Partner terms & instant verification
 
@@ -86,7 +88,7 @@ Aetherix isn't just another chatbot — it's a **full-stack AI-powered service p
 │  React + Vite   │    Express + Node.js              │
 │  Tailwind CSS   │                                   │
 │  Lucide Icons   │  ┌─────────────┐                  │
-│  Web Speech API │  │ Mistral AI  │ ← Intent Detection│
+│  Web Speech API │  │ OpenCode / LongCat AI  │ ← Intent Detection│
 │                 │  └──────┬──────┘                  │
 │  Components:    │         │                         │
 │  ├ Dashboard    │  ┌──────▼──────┐                  │
@@ -113,7 +115,7 @@ Aetherix isn't just another chatbot — it's a **full-stack AI-powered service p
 
 - **Node.js** 18+ 
 - **npm** 9+
-- **Mistral AI API Key** ([Get one free](https://console.mistral.ai/))
+- **OpenCode / LongCat AI API Key** ()
 
 ### Installation
 
@@ -126,7 +128,7 @@ cd aetherix-ai
 npm install
 
 # Set up environment variables
-echo "MISTRAL_API_KEY=your_api_key_here" > .env
+echo "AI_PROVIDER=your_api_key_here" > .env
 
 # Start development server
 npm run dev
@@ -140,7 +142,7 @@ The app will be running at `http://localhost:5000` 🎉
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `MISTRAL_API_KEY` | ✅ Yes | Your Mistral AI API key |
+| `AI_PROVIDER` | ✅ Yes | AI provider switch: opencode (default) or longcat |
 | `PORT` | ❌ No | Server port (default: `3000`) |
 
 > **Note:** Weather, Web Search, and Wikipedia APIs are **completely free** — no API keys needed! 🎉
@@ -171,7 +173,7 @@ aetherix-ai/
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
-├── render.yaml                # Render deployment config
+├── render.yaml                # Cloudflare Tunnel (M12) deployment config
 └── LICENSE                    # Apache 2.0
 ```
 
@@ -200,11 +202,11 @@ aetherix-ai/
 | **Frontend** | React 18, Vite 5, TypeScript | SPA with hot reload |
 | **Styling** | Tailwind CSS 3, Lucide Icons | Utility-first dark theme |
 | **Backend** | Express.js, Node.js 18 | REST API server |
-| **AI** | Mistral AI (`mistral-small-latest`) | Intent detection & conversation |
+| **AI** | OpenCode / LongCat AI (`opencode/longcat-2.5-preview-free`) | Intent detection & conversation |
 | **Voice** | Web Speech API | Browser-native voice input |
 | **Weather** | Open-Meteo API | Free, no API key |
 | **Search** | DuckDuckGo + Wikipedia | Free, no API key |
-| **Deploy** | Render | Auto-deploy from GitHub |
+| **Deploy** | Cloudflare Tunnel (M12) | Live tunnel from M12 production |
 
 </div>
 
