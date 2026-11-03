@@ -2,7 +2,7 @@
 
 A chat app to order food, book rides, and hire workers. It also checks weather, searches the web, and looks up Wikipedia, all from one chat.
 
-Live: https://aetherixai.qzz.io
+Demo: [https://aetherixai.qzz.io](https://aetherixai.qzz.io)
 
 ## What it does
 
