@@ -10,7 +10,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
-[![Cloudflare Tunnel (M12)](https://img.shields.io/badge/Deployed_on-Cloudflare Tunnel (M12)-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+[![Live](https://img.shields.io/badge/Live-aetherixai.qzz.io-46E3B7?style=for-the-badge)](https://aetherixai.qzz.io)
 
 <br/>
 
@@ -173,7 +173,7 @@ aetherix-ai/
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
-├── render.yaml                # Cloudflare Tunnel (M12) deployment config
+├── render.yaml                # Legacy Render deployment config
 └── LICENSE                    # Apache 2.0
 ```
 
