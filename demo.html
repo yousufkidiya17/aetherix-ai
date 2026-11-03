@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aetherix AI — Demo Preview</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0d0d0d;color:#eee;margin:0;padding:24px}
+main{max-width:640px;margin:0 auto}
+h1{margin:0 0 4px} p{color:#aaa;line-height:1.5}
+.note{background:#1a1a2e;border:1px solid #333;padding:12px 16px;border-radius:8px}
+#chat{border:1px solid #333;border-radius:12px;padding:16px;min-height:220px;margin:16px 0}
+.msg{margin:10px 0;padding:10px 14px;border-radius:10px;max-width:85%}
+.user{background:#1a3a5a;margin-left:auto}
+.bot{background:#222}
+button{background:#222;color:#eee;border:1px solid #444;border-radius:20px;padding:8px 14px;margin:4px;cursor:pointer}
+button:hover{background:#333}
+#inputRow{display:flex;gap:8px}
+#q{flex:1;background:#111;color:#eee;border:1px solid #444;border-radius:8px;padding:10px}
+</style>
+</head>
+<body>
+<main>
+<h1>Aetherix AI — Demo Preview</h1>
+<p>Static UI preview only. No backend, no live AI here.</p>
+<div class="note">Live app link (aetherixai.qzz.io) is currently down because the M12 machine is off. This page is a separate preview so you can still see how the chat looks.</div>
+<div id="chat">
+<div class="msg bot">Hi, I can help with food, rides, workers, weather, search and Wikipedia. Try a button below.</div>
+</div>
+<div>
+<button onclick="ask('food')">Order Food</button>
+<button onclick="ask('ride')">Book Ride</button>
+<button onclick="ask('worker')">Hire Worker</button>
+<button onclick="ask('weather')">Weather</button>
+</div>
+<div id="inputRow" style="margin-top:12px">
+<input id="q" placeholder="Type a message..." onkeydown="if(event.key==='Enter')send()">
+<button onclick="send()">Send</button>
+</div>
+</main>
+<script>
+const replies={
+food:"Demo reply: Food ordering — sample restaurants: Pizza Place, Burger House. (Live ordering needs the backend.)",
+ride:"Demo reply: Ride booking — sample fare: Mini ₹120, Sedan ₹180. (Live booking needs the backend.)",
+worker:"Demo reply: Workers — sample: Plumber, Electrician, Carpenter, Cleaner, Driver, plus 22 professionals. (Live hiring needs the backend.)",
+weather:"Demo reply: Weather — sample: Khandwa, 24°C, mostly clear. (Live weather needs the backend.)"
+};
+function add(text,cls){const d=document.createElement('div');d.className='msg '+cls;d.textContent=text;document.getElementById('chat').appendChild(d);}
+function ask(k){add({food:'I want to order food',ride:'I want to book a ride',worker:'I want to hire a worker',weather:'What is the weather?'}[k],'user');add(replies[k],'bot');}
+function send(){const i=document.getElementById('q');if(!i.value.trim())return;add(i.value,'user');add('Demo reply: This is only a UI preview. Live AI is not connected here.','bot');i.value='';}
+</script>
+</body>
+</html>
