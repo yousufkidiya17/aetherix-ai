@@ -2,12 +2,6 @@
 
 A chat app to order food, book rides, and hire workers. It also checks weather, searches the web, and looks up Wikipedia, all from one chat.
 
-Live app: [https://aetherixai.qzz.io](https://aetherixai.qzz.io) (currently down, M12 off)
-
-Real demo (live app on Render, works even when M12 is off): [https://aetherix-v2.onrender.com](https://aetherix-v2.onrender.com)
-
-Demo preview (static, works without backend): [https://yousufkidiya17.github.io/aetherix-ai/demo.html](https://yousufkidiya17.github.io/aetherix-ai/demo.html)
-
 ## What it does
 
 - Order Food
@@ -30,7 +24,6 @@ The chat answers in English by default. If you type in Devanagari, it answers in
 ## Run locally
 
 ```bash
-git clone https://github.com/yousufkidiya17/aetherix-ai.git
 cd aetherix-ai
 npm install
 npm run dev
@@ -43,10 +36,6 @@ client/   # React frontend
 server/   # Express backend
 shared/   # Shared types
 ```
-
-## Note
-
-This README describes the Oct 2026 production setup at aetherixai.qzz.io. The repo code snapshot is from Sep 2026.
 
 ## License
 
